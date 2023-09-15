@@ -68,22 +68,6 @@ public class AFBlocks {
     public static final Supplier<Block> WARPED_TABLE = registerBlock("warped_table", () -> new TableBlock(Properties.nether_wood));
 
     // Stool
-    public static final Supplier<Block> WHITE_STOOL = registerBlock("white_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> ORANGE_STOOL = registerBlock("orange_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> MAGENTA_STOOL = registerBlock("magenta_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> LIGHT_BLUE_STOOL = registerBlock("light_blue_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> YELLOW_STOOL = registerBlock("yellow_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> LIME_STOOL = registerBlock("lime_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> PINK_STOOL = registerBlock("pink_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> GRAY_STOOL = registerBlock("gray_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> LIGHT_GRAY_STOOL = registerBlock("light_gray_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> CYAN_STOOL = registerBlock("cyan_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> PURPLE_STOOL = registerBlock("purple_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> BLUE_STOOL = registerBlock("blue_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> BROWN_STOOL = registerBlock("brown_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> GREEN_STOOL = registerBlock("green_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> RED_STOOL = registerBlock("red_stool", () -> new StoolBlock(Properties.weak_wood));
-    public static final Supplier<Block> BLACK_STOOL = registerBlock("black_stool", () -> new StoolBlock(Properties.weak_wood));
 
     // Version 2
     // Shutter
@@ -305,23 +289,6 @@ public class AFBlocks {
         AFRegistry.setFlammable(ACACIA_PLANTER_BOX, 5, 20);
         AFRegistry.setFlammable(DARK_OAK_PLANTER_BOX, 5, 20);
         AFRegistry.setFlammable(MANGROVE_PLANTER_BOX, 5, 20);
-
-        AFRegistry.setFlammable(WHITE_STOOL, 5, 20);
-        AFRegistry.setFlammable(ORANGE_STOOL, 5, 20);
-        AFRegistry.setFlammable(MAGENTA_STOOL, 5, 20);
-        AFRegistry.setFlammable(LIGHT_BLUE_STOOL, 5, 20);
-        AFRegistry.setFlammable(YELLOW_STOOL, 5, 20);
-        AFRegistry.setFlammable(LIME_STOOL, 5, 20);
-        AFRegistry.setFlammable(PINK_STOOL, 5, 20);
-        AFRegistry.setFlammable(GRAY_STOOL, 5, 20);
-        AFRegistry.setFlammable(LIGHT_GRAY_STOOL, 5, 20);
-        AFRegistry.setFlammable(CYAN_STOOL, 5, 20);
-        AFRegistry.setFlammable(PURPLE_STOOL, 5, 20);
-        AFRegistry.setFlammable(BLUE_STOOL, 5, 20);
-        AFRegistry.setFlammable(BROWN_STOOL, 5, 20);
-        AFRegistry.setFlammable(GREEN_STOOL, 5, 20);
-        AFRegistry.setFlammable(RED_STOOL, 5, 20);
-        AFRegistry.setFlammable(BLACK_STOOL, 5, 20);
 
         AFRegistry.setFlammable(WHITE_CURTAIN, 5, 20);
         AFRegistry.setFlammable(ORANGE_CURTAIN, 5, 20);

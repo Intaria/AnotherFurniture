@@ -89,41 +89,6 @@ public class RecipeGenerator extends RecipeProvider {
         planterBox(consumer, AFBlocks.CRIMSON_PLANTER_BOX.get(), Items.CRIMSON_SLAB, Items.CRIMSON_PLANKS);
         planterBox(consumer, AFBlocks.WARPED_PLANTER_BOX.get(), Items.WARPED_SLAB, Items.WARPED_PLANKS);
 
-        // Stools
-        stool(consumer, AFBlocks.WHITE_STOOL.get(), Blocks.WHITE_WOOL);
-        stool(consumer, AFBlocks.ORANGE_STOOL.get(), Items.ORANGE_WOOL);
-        stool(consumer, AFBlocks.MAGENTA_STOOL.get(), Items.MAGENTA_WOOL);
-        stool(consumer, AFBlocks.LIGHT_BLUE_STOOL.get(), Items.LIGHT_BLUE_WOOL);
-        stool(consumer, AFBlocks.YELLOW_STOOL.get(), Items.YELLOW_WOOL);
-        stool(consumer, AFBlocks.LIME_STOOL.get(), Items.LIME_WOOL);
-        stool(consumer, AFBlocks.PINK_STOOL.get(), Items.PINK_WOOL);
-        stool(consumer, AFBlocks.GRAY_STOOL.get(), Items.GRAY_WOOL);
-        stool(consumer, AFBlocks.LIGHT_GRAY_STOOL.get(), Items.LIGHT_GRAY_WOOL);
-        stool(consumer, AFBlocks.CYAN_STOOL.get(), Items.CYAN_WOOL);
-        stool(consumer, AFBlocks.PURPLE_STOOL.get(), Items.PURPLE_WOOL);
-        stool(consumer, AFBlocks.BLUE_STOOL.get(), Items.BLUE_WOOL);
-        stool(consumer, AFBlocks.BROWN_STOOL.get(), Items.BROWN_WOOL);
-        stool(consumer, AFBlocks.GREEN_STOOL.get(), Items.GREEN_WOOL);
-        stool(consumer, AFBlocks.RED_STOOL.get(), Items.RED_WOOL);
-        stool(consumer, AFBlocks.BLACK_STOOL.get(), Items.BLACK_WOOL);
-
-        // Stools Dyeing
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.ORANGE_STOOL.get(), Items.ORANGE_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.MAGENTA_STOOL.get(), Items.MAGENTA_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.LIGHT_BLUE_STOOL.get(), Items.LIGHT_BLUE_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.YELLOW_STOOL.get(), Items.YELLOW_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.LIME_STOOL.get(), Items.LIME_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.PINK_STOOL.get(), Items.PINK_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.GRAY_STOOL.get(), Items.GRAY_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.LIGHT_GRAY_STOOL.get(), Items.LIGHT_GRAY_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.CYAN_STOOL.get(), Items.CYAN_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.PURPLE_STOOL.get(), Items.PURPLE_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.BLUE_STOOL.get(), Items.BLUE_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.BROWN_STOOL.get(), Items.BROWN_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.GREEN_STOOL.get(), Items.GREEN_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.RED_STOOL.get(), Items.RED_DYE);
-        coloredStoolFromWhiteStoolAndDye(consumer, AFBlocks.BLACK_STOOL.get(), Items.BLACK_DYE);
-
         // Curtains
         curtain(consumer, AFBlocks.WHITE_CURTAIN.get(), Items.WHITE_WOOL);
         curtain(consumer, AFBlocks.ORANGE_CURTAIN.get(), Items.ORANGE_WOOL);
@@ -238,18 +203,6 @@ public class RecipeGenerator extends RecipeProvider {
                 .save(consumer);
     }
 
-    private static void stool(Consumer<FinishedRecipe> consumer, ItemLike stool, ItemLike wool) {
-        ShapedRecipeBuilder.shaped(stool, 3)
-                .pattern("#W#")
-                .pattern("/ /")
-                .define('#', ItemTags.PLANKS)
-                .define('W', wool)
-                .define('/', Items.STICK)
-                .unlockedBy("has_wool", InventoryChangeTrigger.TriggerInstance.hasItems(wool))
-                .group("stools")
-                .save(consumer);
-    }
-
     private static void curtain(Consumer<FinishedRecipe> consumer, ItemLike curtain, ItemLike wool) {
         ShapedRecipeBuilder.shaped(curtain, 3)
                 .pattern("//")
@@ -264,10 +217,6 @@ public class RecipeGenerator extends RecipeProvider {
 
     protected static void coloredCurtainFromWhiteCurtainAndDye(Consumer<FinishedRecipe> consumer, ItemLike coloredCurtain, ItemLike dye) {
         ShapelessRecipeBuilder.shapeless(coloredCurtain).requires(dye).requires(AFBlocks.WHITE_CURTAIN.get()).unlockedBy("has_white_curtain", InventoryChangeTrigger.TriggerInstance.hasItems(AFBlocks.WHITE_CURTAIN.get())).group("curtains").save(consumer, new ResourceLocation(AnotherFurniture.MOD_ID, getItemName(coloredCurtain) + "_dyeing"));
-    }
-
-    protected static void coloredStoolFromWhiteStoolAndDye(Consumer<FinishedRecipe> consumer, ItemLike coloredStool, ItemLike dye) {
-        ShapelessRecipeBuilder.shapeless(coloredStool).requires(dye).requires(AFBlocks.WHITE_STOOL.get()).unlockedBy("has_white_stool", InventoryChangeTrigger.TriggerInstance.hasItems(AFBlocks.WHITE_STOOL.get())).group("stools").save(consumer, new ResourceLocation(AnotherFurniture.MOD_ID, getItemName(coloredStool) + "_dyeing"));
     }
 
     protected static String getItemName(ItemLike item) {

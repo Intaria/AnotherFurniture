@@ -107,7 +107,6 @@ wooden_furnitures = [
 ]
 
 colored_furnitures = [
-    "stool",
     "curtain",
     "lamp",
     "sofa",

@@ -18,7 +18,6 @@ public class AFBlockTags {
     public static final TagKey<Block> SHELVES = blockTag("shelves");
     public static final TagKey<Block> SHUTTERS = blockTag("shutters");
     public static final TagKey<Block> SOFAS = blockTag("sofas");
-    public static final TagKey<Block> STOOLS = blockTag("stools");
     public static final TagKey<Block> TABLES = blockTag("tables");
     public static final TagKey<Block> TALL_STOOLS = blockTag("tall_stools");
 

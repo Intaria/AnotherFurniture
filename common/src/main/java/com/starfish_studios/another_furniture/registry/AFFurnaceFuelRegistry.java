@@ -19,7 +19,6 @@ public class AFFurnaceFuelRegistry {
         register(AFItemTags.SHELVES, 300);
         register(AFItemTags.SHUTTERS, 300);
         register(AFItemTags.SOFAS, 300);
-        register(AFItemTags.STOOLS, 300);
         register(AFItemTags.TABLES, 300);
         register(AFItemTags.TALL_STOOLS, 300);
     }

@@ -21,7 +21,6 @@ public class AFItemTags {
     public static final TagKey<Item> SHELVES = itemTag("shelves");
     public static final TagKey<Item> SHUTTERS = itemTag("shutters");
     public static final TagKey<Item> SOFAS = itemTag("sofas");
-    public static final TagKey<Item> STOOLS = itemTag("stools");
     public static final TagKey<Item> TABLES = itemTag("tables");
     public static final TagKey<Item> TALL_STOOLS = itemTag("tall_stools");
 
