@@ -123,15 +123,6 @@ public class RecipeGenerator extends RecipeProvider {
         coloredCurtainFromWhiteCurtainAndDye(consumer, AFBlocks.GREEN_CURTAIN.get(), Items.GREEN_DYE);
         coloredCurtainFromWhiteCurtainAndDye(consumer, AFBlocks.RED_CURTAIN.get(), Items.RED_DYE);
         coloredCurtainFromWhiteCurtainAndDye(consumer, AFBlocks.BLACK_CURTAIN.get(), Items.BLACK_DYE);
-
-        // Service Bell
-        ShapedRecipeBuilder.shaped(AFBlocks.SERVICE_BELL.get(), 3)
-                .pattern(" N ")
-                .pattern("III")
-                .define('N', Items.IRON_NUGGET)
-                .define('I', Items.IRON_INGOT)
-                .unlockedBy("has_nugget", InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_NUGGET))
-                .save(consumer);
     }
 
     private static void chair(Consumer<FinishedRecipe> consumer, ItemLike chair, ItemLike planks) {

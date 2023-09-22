@@ -1,17 +1,10 @@
 package com.starfish_studios.another_furniture.block;
 
-import com.starfish_studios.another_furniture.block.properties.HorizontalConnectionType;
-import com.starfish_studios.another_furniture.block.properties.ModBlockStateProperties;
-import com.starfish_studios.another_furniture.entity.SeatEntity;
-import com.starfish_studios.another_furniture.registry.AFSoundEvents;
-import com.starfish_studios.another_furniture.registry.AFBlockTags;
 import com.starfish_studios.another_furniture.util.block.HammerableBlock;
 import com.starfish_studios.another_furniture.util.block.ShapeUtil;
 import com.starfish_studios.another_furniture.util.block.TuckableBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
@@ -27,7 +20,6 @@ import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;

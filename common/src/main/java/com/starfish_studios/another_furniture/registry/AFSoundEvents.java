@@ -7,7 +7,6 @@ import net.minecraft.sounds.SoundEvent;
 import java.util.function.Supplier;
 
 public class AFSoundEvents {
-    public static final Supplier<SoundEvent> SERVICE_BELL = register("block.service_bell.use");
     public static final Supplier<SoundEvent> CHAIR_TUCK = register("block.chair.tuck");
     public static final Supplier<SoundEvent> CHAIR_UNTUCK = register("block.chair.untuck");
     public static final Supplier<SoundEvent> CURTAIN = register("block.curtain.use");

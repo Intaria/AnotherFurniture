@@ -1,11 +1,4 @@
 {
-	"block.service_bell.use": {
-		"category": "block",
-		"sounds": [
-			"another_furniture:service_bell"
-		],
-		"subtitle": "subtitles.block.another_furniture.service_bell.use"
-	},
 	"block.chair.tuck": {
 		"category": "block",
 		"sounds": [

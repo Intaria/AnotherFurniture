@@ -19,9 +19,6 @@ public class AFBlockEntityTypes {
                     AFBlocks.WARPED_SHELF.get()
             ));
 
-    public static final Supplier<BlockEntityType<ServiceBellBlockEntity>> SERVICE_BELL = AFRegistry.registerBlockEntityType("service_bell",
-            () -> AFRegistry.createBlockEntityType(ServiceBellBlockEntity::new, AFBlocks.SERVICE_BELL.get()));
-
     public static final Supplier<BlockEntityType<PlanterBoxBlockEntity>> PLANTER_BOX = AFRegistry.registerBlockEntityType("planter_box",
             () -> AFRegistry.createBlockEntityType(PlanterBoxBlockEntity::new,
                     AFBlocks.OAK_PLANTER_BOX.get(),

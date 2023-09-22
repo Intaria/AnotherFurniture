@@ -27,7 +27,6 @@ public class AFBlocks {
         public static BlockBehaviour.Properties nether_weak_wood = Block.Properties.of(Material.NETHER_WOOD).strength(1.0F, 3.0F).sound(SoundType.WOOD);
         
         public static BlockBehaviour.Properties curtain = Block.Properties.of(Material.WOOL).strength(0.1F).sound(SoundType.WOOL).noOcclusion();
-        public static BlockBehaviour.Properties service_bell = Block.Properties.of(Material.METAL).strength(2.0F, 3.0F).sound(SoundType.METAL);
         public static BlockBehaviour.Properties lamp = wood.lightLevel((blockState) -> blockState.hasProperty(BlockStateProperties.LIT) && blockState.getValue(BlockStateProperties.LIT) ? (blockState.getValue(ModBlockStateProperties.LEVEL_1_3) * 5) : 0);
         public static BlockBehaviour.Properties tombstone = Block.Properties.of(Material.STONE).strength(3.0F, 3.0F).sound(SoundType.STONE);
         public static BlockBehaviour.Properties awning = Block.Properties.of(Material.WOOL).strength(0.1F).sound(SoundType.WOOL).noOcclusion();
@@ -109,9 +108,6 @@ public class AFBlocks {
     public static final Supplier<Block> GREEN_CURTAIN = registerBlock("green_curtain", () -> new CurtainBlock(Properties.curtain));
     public static final Supplier<Block> RED_CURTAIN = registerBlock("red_curtain", () -> new CurtainBlock(Properties.curtain));
     public static final Supplier<Block> BLACK_CURTAIN = registerBlock("black_curtain", () -> new CurtainBlock(Properties.curtain));
-
-    // Bell
-    public static final Supplier<Block> SERVICE_BELL = registerBlock("service_bell", () -> new ServiceBellBlock(Properties.service_bell));
 
     // Version 3
     //Bench
